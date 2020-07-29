@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>derva | Etch-a-Sketch - TOP </title>
+</head>   
+<body>
+    <header>
+        <div id="logo"><span id="logo-hash">#</span><span id="logo-name"><b>theodinproject</b></span></div>
+        <div class="project-name">Project: Etch-a-sketch</div>
+        <div class="switch-mode">
+            <input type="checkbox" class="checkbox" id="chx">
+            <label class="label" for="chx">
+                <i class="fa fa-moon-o"></i>
+                <i class="fa fa-sun-o"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="options">
+                <div class="submit-row">
+                    <input type="text" placeholder="Enter columns" id="col">
+                    <input type="text" placeholder="Enter rows" id="rows">
+                    <button type="submit" class="submit" onclick="drawGrid()">SUBMIT</button>
+                </div>
+                <div class="restart-row">
+                    <button type="submit" class="restart" onclick="reset()">RESTART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-head">
+            <div id="grid">
+      
+            </div>
+        </div>
+
+        <div class="description">
+            <p>Hi, here is my work for task “Etch-a-sketch” project following The Odin Project - Web development 101 section.
+                Also feel free to visit my <b>github.com/derva</b> & <b>codepen.io/derviswebdev</b> account to see my other works :)</p>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="github.io/derva"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+            <a href="github.io/derva"><i class="fa fa-codepen" style="font-size: 30px;"></i></a>
+        </div>
+        <p>
+            <b>&copy; by derva | 2020 | Tuzla, Bosnia and Hercegovina</b>
+        </p>
+    </footer>
+    
+    <script src="script/main.js"></script>
+</body>
+</html>
