@@ -10,13 +10,13 @@
 <body>
     <header>
         <div id="logo"><span id="logo-hash">#</span><span id="logo-name"><b>theodinproject</b></span></div>
-        <div class="project-name">Project: Etch-a-sketch</div>
+        <div class="project-name"><h1 id="comp-name">Project: Etch-a-sketch</h1></div>
         <div class="switch-mode">
             <input type="checkbox" class="checkbox" id="chx">
-            <label class="label" for="chx">
+            <label class="label" id="label" for="chx">
                 <i class="fa fa-moon-o"></i>
                 <i class="fa fa-sun-o"></i>
-                <div class="ball"></div>
+                <div class="ball" id="ball"></div>
             </label>
         </div>
     </header>
@@ -27,7 +27,7 @@
                 <div class="submit-row">
                     <input type="text" placeholder="Enter columns" id="col">
                     <input type="text" placeholder="Enter rows" id="rows">
-                    <button type="submit" class="submit" onclick="drawGrid()">SUBMIT</button>
+                    <button type="submit" class="submit" id="submit" onclick="drawGrid()">SUBMIT</button>
                 </div>
                 <div class="restart-row">
                     <button type="submit" class="restart" onclick="reset()">RESTART</button>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="grid-head">
+        <div class="grid-head" id="grid-head">
             <div id="grid">
       
             </div>
@@ -49,8 +49,8 @@
 
     <footer>
         <div>
-            <a href="github.io/derva"><i class="fa fa-github" style="font-size: 30px;"></i></a>
-            <a href="github.io/derva"><i class="fa fa-codepen" style="font-size: 30px;"></i></a>
+            <a href="https://github.com/derva" target="_blank"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+            <a href="https://codepen.io/derviswebdev" target="_blank"><i class="fa fa-codepen" style="font-size: 30px;"></i></a>
         </div>
         <p>
             <b>&copy; by derva | 2020 | Tuzla, Bosnia and Hercegovina</b>
